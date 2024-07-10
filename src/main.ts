@@ -23,7 +23,6 @@ function bootstrap(): IBootstrapReturn {
 	appContainer.load(appBindings);
 	const app = appContainer.get<App>(TYPES.Application);
 	app.init();
-	console.log('Hi');
 	return { appContainer, app };
 }
 
