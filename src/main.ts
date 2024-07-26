@@ -24,9 +24,9 @@ export const appBindings = new ContainerModule((bind: interfaces.Bind) => {
 	bind<ExeptionFilter>(TYPES.ExeptionFilter).to(ExeptionFilter).inSingletonScope();
 	bind<IUserController>(TYPES.UserController).to(UserController).inSingletonScope();
 	bind<IUserService>(TYPES.UserService).to(UserService).inSingletonScope();
-	bind<PrismaService>(TYPES.PrismaService).to(PrismaService).inSingletonScope()
-    bind<IConfigService>(TYPES.ConfigService).to(ConfigService).inSingletonScope()
-	bind<IUsersReposetory>(TYPES.UsersRepository).to(UsersRepository).inSingletonScope()
+	bind<PrismaService>(TYPES.PrismaService).to(PrismaService).inSingletonScope();
+	bind<IConfigService>(TYPES.ConfigService).to(ConfigService).inSingletonScope();
+	bind<IUsersReposetory>(TYPES.UsersRepository).to(UsersRepository).inSingletonScope();
 	bind<App>(TYPES.Application).to(App).inSingletonScope();
 });
 
